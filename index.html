@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>JS B4.2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="mt-3">JS B4.2</h3>
+      <div class="mt-5">
+        <!-- Bài 1: In ra ngày trước đó và ngày tiếp theo -->
+        <h5>Bài 1: In ra ngày trước đó và ngày tiếp theo</h5>
+        <form class="row g-3">
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum1" class="form-label">Nhập ngày</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum1"
+              placeholder="Nhập ngày"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum2" class="form-label">Nhập tháng</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum2"
+              placeholder="Nhập tháng"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum3" class="form-label">Nhập năm</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum3"
+              placeholder="Nhập năm"
+            />
+          </div>
+          <div>
+            <button id="btn-calc" class="btn btn-success my-3" type="button">
+              Xem
+            </button>
+          </div>
+        </form>
+        <p id="calcNum" type="button" class="alert alert-success"></p>
+      </div>
+      <div class="mt-5">
+        <!-- Bài 2: Cho biết tháng nhập vào có bao nhiêu ngày -->
+        <h5>Bài 2: Cho biết tháng nhập vào có bao nhiêu ngày</h5>
+        <form class="row g-3">
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum4" class="form-label">Nhập tháng</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum4"
+              placeholder="Nhập tháng"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum5" class="form-label">Nhập năm</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum5"
+              placeholder="Nhập năm"
+            />
+          </div>
+          <div>
+            <button id="btn-calc-day" class="btn btn-success my-3" type="button">
+              Xem
+            </button>
+          </div>
+        </form>
+        <p id="check-day" type="button" class="alert alert-success"></p>
+      </div>
+      <div class="mt-5">
+        <!-- Bài 3: In ra cách đọc 3 số nguyên -->
+        <h5>Bài 3: In ra cách đọc 3 số nguyên</h5>
+        <form class="row g-3">
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum6" class="form-label">Nhập số</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum6"
+              placeholder="Nhập số"
+            />
+          </div>
+          <div>
+            <button id="btn-read" class="btn btn-success my-3" type="button">
+              Xem cách đọc
+            </button>
+          </div>
+        </form>
+        <p id="readNum" type="button" class="alert alert-success"></p>
+      </div>
+      <div class="mt-5">
+        <!-- Bài 4: Tìm sinh viên xa trường nhất theo tạo độ x, y -->
+        <h5>Bài 4: Tìm sinh viên xa trường nhất theo tạo độ x, y</h5>
+        <form class="row g-3">
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum7" class="form-label">Sinh viên A: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum7"
+              placeholder="Nhập tọa độ x"
+            />
+            <input
+              type="text"
+              class="form-control mt-2"
+              id="inputNum7"
+              placeholder="Nhập tọa độ y"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum8" class="form-label">Sinh viên B: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum8"
+              placeholder="Nhập tọa độ x"
+            />
+            <input
+              type="text"
+              class="form-control mt-2"
+              id="inputNum8"
+              placeholder="Nhập tọa độ y"
+            />
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="inputNum9" class="form-label">Sinh viên C: </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputNum9"
+              placeholder="Nhập tọa độ x"
+            />
+            <input
+              type="text"
+              class="form-control mt-2"
+              id="inputNum9"
+              placeholder="Nhập tọa độ y"
+            />
+          </div>
+          <div>
+            <button id="btn-coordinates" class="btn btn-success my-3" type="button">
+              Tìm
+            </button>
+          </div>
+        </form>
+        <p id="findCoordinates" type="button" class="alert alert-success"></p>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

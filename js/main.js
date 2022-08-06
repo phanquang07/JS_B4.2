@@ -213,8 +213,7 @@ function readNum() {
 document.querySelector('#btn-read').onclick = readNum
 
 
-// Bài 4: Cho biết tên và tọa độ nhà của 3 sinh viên. 
-// Cho biết tọa độ của trường đại học. 
+// Bài 4: Cho biết tọa độ của trường đại học. 
 // Viết chương trình in tên sinh viên xa trường nhất.
 
 function getName() {
